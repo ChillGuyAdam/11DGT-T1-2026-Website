@@ -1,0 +1,44 @@
+body {
+    margin:auto;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "banner banner banner"
+    "nav nav nav"
+    "sub-heading sub-heading sub-heading"
+    "devotion devotion devotion"
+    "footer footer footer"
+}
+
+.banner {
+    grid-area: banner;
+    background-color: #13262F; 
+    text-align: center;
+    
+    
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #C3A995;
+}
+
+
+.devotion {
+    grid-area: devotion;
+}
+
+.sub-heading {
+    grid-area: sub-heading;
+
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(100, 61, 22);
+}
