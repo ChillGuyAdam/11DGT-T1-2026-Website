@@ -1,25 +1,28 @@
 body {
     margin:auto;
+    background-color:#13262F;
+
 }
 
 
 .wrapper {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+
     grid-template-areas:
     "banner banner banner"
     "nav nav nav"
     "sub-heading sub-heading sub-heading"
     "devotion devotion devotion"
     "footer footer footer"
+    
 }
 
 .banner {
     grid-area: banner;
     background-color: #13262F; 
-    text-align: center;
-    
+    margin-bottom: 0;
+    margin-top: 0;
     
 }
 
@@ -28,17 +31,32 @@ body {
     background-color: #C3A995;
 }
 
+.sub-heading {
+    grid-area: sub-heading;
+    background-color:#13262F;
+    color:lavender;
+    margin-top:6%;
+    margin-bottom:6%;
+
+}
 
 .devotion {
     grid-area: devotion;
+    background-color:#C3A995;
 }
 
-.sub-heading {
-    grid-area: sub-heading;
-
+.devwit{
+        color:#13262F;
+        text-decoration: none;
+    }
+.devwit:hover {
+    color:lavender; 
 }
+
 
 .footer {
     grid-area: footer;
     background-color: rgb(100, 61, 22);
 }
+
+
