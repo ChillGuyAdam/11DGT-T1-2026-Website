@@ -8,7 +8,6 @@ body {
 .wrapper {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-
     grid-template-areas:
     "banner banner banner"
     "nav nav nav"
@@ -29,6 +28,8 @@ body {
 .nav {
     grid-area: nav;
     background-color: #C3A995;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .sub-heading {
@@ -60,3 +61,14 @@ body {
 }
 
 
+.nav a{
+    background-color:#13262F;
+    color:#E9E6FF;
+    border-radius: 6px;
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
