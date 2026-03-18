@@ -19,17 +19,20 @@ body {
 
 .banner {
     grid-area: banner;
-    background-color: #13262F; 
-    margin-bottom: 0;
-    margin-top: 0;
-    
+    background-color: #13262F;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding-left: 43%;
+    padding-right:43%;
+    color:#E9E6FF;
+    font-size:73px;
 }
 
 .nav {
     grid-area: nav;
     background-color: #C3A995;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-top: 20px;
+    padding-bottom: 23px;
 }
 
 .sub-heading {
@@ -54,21 +57,30 @@ body {
     color:lavender; 
 }
 
-
+j
 .footer {
     grid-area: footer;
     background-color: rgb(100, 61, 22);
 }
 
-
 .nav a{
     background-color:#13262F;
     color:#E9E6FF;
-    border-radius: 6px;
-    padding-left: 21px;
-    padding-right: 21px;
+    border-radius: 7px;
+    padding-left: 29px;
+    padding-right: 29px;
     margin-left: 20px;
     margin-right: 20px;
-    padding-bottom: 3px;
-    padding-top: 3px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size:large;
 }
+
+.nav a:hover {
+    color:#13262F;
+    background-color:#E9E6FF;
+}
+
+
+
+
