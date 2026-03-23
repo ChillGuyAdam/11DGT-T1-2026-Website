@@ -1,4 +1,7 @@
 /* THe background of my website */
+html, body {
+    height: 100%;
+}
 body {
     margin:auto;
     background-color:#13262F;
@@ -8,8 +11,14 @@ body {
 /* Boxes order*/
 .wrapper {
     display: grid;
+    min-height: 100vh; 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 
+    auto
+    auto
+    auto
+    1fr
+    auto;
     grid-template-areas:
     "banner banner banner"
     "nav nav nav"
@@ -49,58 +58,30 @@ body {
 
 .devotion {
     grid-area:devotion; 
-
     display: flex;
     justify-content:center; 
     gap:100px;  
-    padding-bottom:75px;
+    margin-bottom:auto;
+    margin: auto 50px 180px 50px
+    
 } 
 /* quote button */
-.devq{
+.devq, .deve, .devb {
     color: #13262F;
     text-decoration: none;
     text-align: center;
     background-color: #C3A995;
-    grid-area: devq;
-    font-size: 50px; 
-    padding-left:20px;
-    padding-right:20px;
+    font-size: 35px; 
+    padding: 15px 20px;
     border-radius:25px;
-    padding-top:15px;
-    padding-bottom:15px;
-
+    width:250px;
+    text-align:center;
+    max-width:250;
+    flex: 1;
 }
 
-/* Encouraging word button */
-.deve{
-    color: #13262F;
-    text-decoration: none;
-    text-align: center;
-    background-color: #C3A995;
-    grid-area: deve;
-    font-size: 50px; 
-    padding-left:20px;
-    padding-right:20px;
-    border-radius:25px;
-    padding-top:15px;
-    padding-bottom:15px;
-}
 
-/* Bible verse button */
-.devb{
-    color: #13262F;
-    text-decoration: none;
-    text-align: center;
-    background-color: #C3A995;
-    grid-area: devb;
-    font-size: 50px; 
-    padding-left:20px;
-    padding-right:20px;
-    border-radius:25px;
-    padding-top:15px;
-    padding-bottom:15px;
-}
-
+    
 /* Devotion buttons color change */
 .devq:hover, .deve:hover, .devb:hover {
     color:lavender; 
@@ -108,7 +89,10 @@ body {
 
 /* Footer box customisation*/
 .footer {
+    color:lavender;
     grid-area: footer;
+    height:55px;
+    text-align: center;
     background-color: rgb(100, 61, 22);
 }
 
