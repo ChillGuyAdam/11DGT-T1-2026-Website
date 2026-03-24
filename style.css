@@ -1,17 +1,18 @@
-/* THe background of my website */
+/* THe background of my website (all pages */
 html, body {
     height: 100%;
 }
+
+/* - - - - - - Home page of website - - - - - -  */
+
 body {
     margin:auto;
-    background-color:#13262F;
-    min-height: 100vh; 
+    background-color:#13262F; 
 }
 
 /* Boxes order*/
-.wrapper {
+.wrapper_index {
     display: grid;
-    min-height: 100vh; 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 
     auto
@@ -116,6 +117,14 @@ body {
     color: #13262F;
     background-color: #E9E6FF;
 }
+
+/* - - - - - - Contact page of website - - - - - - */
+
+.wrapper_contact {
+    
+}
+
+/* - - - - - - Font - - - - - - */
 
 /* This my font I am using (NO TOUCHY) */
 .chewy-regular {
