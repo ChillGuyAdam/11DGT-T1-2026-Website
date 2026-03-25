@@ -14,12 +14,7 @@ body {
 .wrapper_index {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 
-    auto
-    auto
-    auto
-    1fr
-    auto;
+    grid-template-rows:auto;
     grid-template-areas:
     "banner banner banner"
     "nav nav nav"
@@ -120,9 +115,70 @@ body {
 
 /* - - - - - - Contact page of website - - - - - - */
 
-.wrapper_contact {
-    
+.phone h2, .email h2 {
+    margin: 0px 0px 0px 0px;
 }
+.phone p, .email p {
+    margin:0px 0px 0px 0px;
+    color:rgb(100, 61, 22);
+    font-size:50px;
+}
+
+/* Display of my website */
+
+.wrapper_contact {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "banner banner banner"
+    "nav nav nav"
+    "phone phone phone"
+    "email email email";
+}
+
+/* brown box colour for phone and email */
+.brox {
+    background-color:rgb(100, 61, 22);
+    border-radius: 25px;
+    padding: 50px 180px 50px 180px; 
+    color:#C3A995;
+}
+
+/* Grid-template-areas for phone and email so that they align properly on the page */
+.phone {
+    grid-area:phone;
+    margin: 80px 30px 20px 85px;
+}
+
+.email {
+    grid-area:email;
+    margin: 80px 30px 20px 85px;
+}
+
+/* Contact details; phone and email*/
+.phone,.email {
+    align-items:center;
+    display:flex;
+    flex-direction:row;
+    gap:100px;
+    font-size:30px;
+
+}
+
+/* - - - - - - About page of website - - - - - - */
+
+.wrapper_about {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "banner banner banner"
+    "nav nav nav"
+    "devotion devotion devotion";
+}
+
+
 
 /* - - - - - - Font - - - - - - */
 
