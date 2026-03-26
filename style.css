@@ -193,6 +193,7 @@ body {
 .about_writing p {
     color:#C3A995;
     font-size: 20px;
+    margin: 30px
 }
 /* image (left) for about page*/
 .img1 {
@@ -265,7 +266,7 @@ body {
 }
 /* - - - - - - Font - - - - - - */
 
-/* This is my font I am using (NO TOUCHY) */
+/* This my font I am using (NO TOUCHY) */
 .chewy-regular {
   font-family: "Chewy", system-ui;
   font-weight: 400;
