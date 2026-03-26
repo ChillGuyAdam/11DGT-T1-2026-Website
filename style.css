@@ -51,7 +51,7 @@ body {
     font-size:30px;
 
 }
-
+/* Devotion buttons */
 .devotion {
     grid-area:devotion; 
     display: flex;
@@ -61,7 +61,7 @@ body {
     margin: auto 50px 180px 50px
     
 } 
-/* quote button */
+/* button decoration and alignment */
 .devq, .deve, .devb {
     color: #13262F;
     text-decoration: none;
@@ -114,17 +114,18 @@ body {
 }
 
 /* - - - - - - Contact page of website - - - - - - */
-
+/* deleting margin problem for heading*/
 .phone h2, .email h2 {
     margin: 0px 0px 0px 0px;
 }
+/* deleting margin probelm for text and customisation too*/
 .phone p, .email p {
     margin:0px 0px 0px 0px;
     color:rgb(100, 61, 22);
     font-size:50px;
 }
 
-/* Display of my website */
+/* Contact layout */
 
 .wrapper_contact {
     display:grid;
@@ -150,7 +151,7 @@ body {
     grid-area:phone;
     margin: 80px 30px 20px 85px;
 }
-
+/* Grid-template-areas for email so that htey align properly on page */
 .email {
     grid-area:email;
     margin: 80px 30px 20px 85px;
@@ -168,6 +169,7 @@ body {
 
 /* - - - - - - About page of website - - - - - - */
 
+/* about layout */
 .wrapper_about {
     display:grid;
     grid-template-rows: auto;
@@ -177,43 +179,93 @@ body {
     "nav nav nav"
     "img1 about img2";
 }
-
+/* grid-area for about to layout correctly */
 .about_writing {
     grid-area:about;
 }
-
+/* heading customisation */
 .about_writing h1 {
     color:rgb(100, 61, 22);
     margin: 40px 100px 40px;
     font-size:40px;
 }
-
+/* writing customisation */
 .about_writing p {
     color:#C3A995;
-
     font-size: 20px;
 }
+/* image (left) for about page*/
 .img1 {
     grid-area:img1;
     height:590px;
     overflow: hidden;
 }
-
+/* image (right) for about page */
 .img2 {
     grid-area:img2;
     height:590px;
     overflow: hidden;
 }
-
+/* image fitting */
 .img1 img, .img2 img {
     width:100%;
     height:100%;
     object-fit: cover;
 }
 
+/* - - - - - - Bible verse, Quote and Encouraging word pages of website - - - - - - */
+
+/* Layout for bible verse, quote and encouraging word */
+.wrapper_devotion {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "banner banner"
+    "nav nav"
+    "devotion-title devotion-title"
+    "devotion-writing devotion-img";
+}
+/* Title customisation */
+.devotion-title {
+    grid-area:devotion-title;
+    color:#13262F;
+    background-color:#E9E6FF;
+    border-radius: 25px;
+    margin: 30px 90px 10px;
+    display:flex;
+    justify-content:center;
+}
+
+
+/* Writing customisation */
+.devotion-writing {
+    grid-area:devotion-writing;
+    color:#C3A995;
+    font-size:23px;
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    align-self:center;
+    padding-left: 160px
+}
+/* img customisation */
+.devotion-img {
+    grid-area:devotion-img;
+    margin: 40px 0px 40px 0px;
+    display:flex;
+    justify-content:center;
+
+    align-self:center;
+
+}
+/* imgs width for quote, bible verse and encouraging word */
+.devotion-img img {
+    width:400px;
+}
 /* - - - - - - Font - - - - - - */
 
-/* This my font I am using (NO TOUCHY) */
+/* This is my font I am using (NO TOUCHY) */
 .chewy-regular {
   font-family: "Chewy", system-ui;
   font-weight: 400;
